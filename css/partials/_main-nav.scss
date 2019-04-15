@@ -1,0 +1,89 @@
+// main: ../style.scss
+
+//================================//
+//       MAIN NAV
+//================================//
+
+// MAIN NAV CONTAINER
+.nav-wrapper {
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// MAIN NAV BUTTONS
+.cta {
+  display: flex;
+  align-items: center;
+  width: 64%;
+  justify-content: flex-end;
+}
+
+// NETMATTERS LOGO
+.logo {
+  height: auto;
+  width: 100%;
+}
+
+// HAMBURGER MENU ICON
+.menu i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $white;
+    height: 57px;
+    width: 63px;
+    border: transparent solid 1px;
+    border-radius: 5%;
+    font-size: 30px;
+  }
+.menu span {
+  text-transform: uppercase;
+  font-family: $font-stack-primary;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  margin-top: -10px;
+}
+.menu a:hover {
+  text-decoration: none;
+}
+
+  .fa-bars {
+    background-color: $primary-color;
+    font-size: 16px;
+  }
+  .fa-bars:hover {
+    background-color: #22242E;
+  }
+
+.menu {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+// CONTACT AND SUPPORT BUTTON ICONS IN MAIN NAV
+.fa-paper-plane,
+.fa-laptop-medical {
+  margin-right: px-to-rem(10px);
+}
+
+// MOBILE PHONE ICON IN SMALLER DEVICES
+.mobile .fa-phone-volume {
+  font-size: 32px;
+  color: $primary-color;
+  transform: rotate(-45deg);
+  display: none;
+  @include mq('md') {
+     display: flex;
+     margin-right: 30px;
+     margin-left: 30px;
+  }
+}
+
+.mobile .fa-phone-volume:hover {
+color: #22242E;
+text-decoration: underline;
+}
